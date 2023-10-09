@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@1.2.0/dist/peerjs.min.js"></script>
+
+    <title>Chat and Video Interaction Website</title>
+</head>
+<body>
+    <header>
+        <h1>Chat and Video Interaction Website</h1>
+    </header>
+    <main>
+        <section id="chat-section">
+            <h2>Textual Chat</h2>
+            <div id="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+        <section id="video-section">
+            <h2>Video Interaction</h2>
+            <div id="local-video">
+                <!-- Local user's video will be displayed here -->
+            </div>
+            <div id="remote-video">
+                <!-- Remote user's video will be displayed here -->
+            </div>
+            <button onclick="startVideoCall()">Start Video Call</button>
+            <button onclick="stopVideoCall()">Stop Video Call</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
